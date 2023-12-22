@@ -4,3 +4,5 @@ numpy
 pandas
 scikit-learn
 tmdbv3api
+dash
+gunicorn
