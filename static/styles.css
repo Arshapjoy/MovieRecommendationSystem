@@ -1,0 +1,95 @@
+/* styles.css */
+
+body {
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #f80404;
+    color: #45b7ec;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+
+h1 {
+    color: rgb(244, 237, 227); /* Change the color of h1 to red */
+    font-size:45px;
+    font-family: 'Segoe print';
+}
+h2 {
+    color: rgb(178, 131, 2); /* Change the color of h1 to red */
+    font-family: 'Segoe print';
+}
+
+main {
+    margin-top: 80px; /* Adjust margin to make room for the fixed header */
+    text-align: center;
+    
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #edf906;
+    font-family: segoe print;
+}
+
+input {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+    border: 1px solid #5a5959;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #000000;
+}
+
+button {
+    background-color: #57bcfb;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #02fc0e;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10;
+    overflow: hidden;
+    
+}
+
+li {
+    display: inline-block;
+    margin-left: 35px;
+    vertical-align: top;
+    color: #fff;
+}
+
+img {
+    width: 220px;
+    height: auto;
+    text-align: center;
+}

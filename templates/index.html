@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation App</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+
+
+</head>
+<body>
+    <h1>Movie Recommendation App</h1>
+    <form method="post" action="/recommend">
+        <label for="movie_title">Which Movie You Liked?</label>
+        <input type="text" id="movie_title" name="movie_title" placeholder="Enter movie title">
+        <button type="submit">Get Recommendations</button>
+    </form>
+    
+    
+    {% if recommendations %}
+    <h2>Recommendations for {{ input_movie }}</h2>
+    <ul>
+        {% for movie in recommendations %}
+        <li>
+            <img src="https://image.tmdb.org/t/p/w185{{ movie['poster_path'] }}" alt="{{ movie['title'] }} Poster">
+            <p>{{ movie['title'] }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+</html>
